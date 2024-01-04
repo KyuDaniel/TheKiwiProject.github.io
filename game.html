@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      overflow: hidden;
+      background: linear-gradient(to bottom, #87CEEB, #add8e6);
+      animation: clouds 20s linear infinite;
+    }
+
+    @keyframes clouds {
+      0% {
+        background-position: 0% 0%;
+      }
+
+      100% {
+        background-position: 100% 0%;
+      }
+    }
+
+    #game-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      color: #333;
+    }
+
+    h1,
+    p,
+    #result {
+      font-size: 2em;
+      text-align: center;
+    }
+
+    #guessInput {
+      padding: 10px;
+      font-size: 1.5em;
+      margin-bottom: 15px;
+      text-align: center;
+    }
+
+    .btn {
+      padding: 10px 20px;
+      font-size: 1.5em;
+      cursor: pointer;
+      margin: 10px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      text-align: center;
+    }
+  </style>
+  <title>Guess the Number Game</title>
+</head>
+
+<body>
+  <div id="game-container">
+    <h1>Guess the Number Game</h1>
+    <p id="result"></p>
+    <p>Enter a number between 0 and 11.</p>
+    <input type="number" id="guessInput" placeholder="Enter your guess" min="0" max="11">
+    <button class="btn" onclick="checkGuess()">Submit Guess</button>
+    <button class="btn" onclick="replay()">Replay</button>
+  </div>
+
+  <script>
+    let secretNumber = generateRandomNumber();
+    let attemptsLeft = 4;
+
+    function generateRandomNumber() {
+      return Math.floor(Math.random() * 12);
+    }
+
+    function checkGuess() {
+      if (attemptsLeft === 0) {
+        return;
+      }
+
+      const guess = parseInt(document.getElementById('guessInput').value);
+
+      if (isNaN(guess) || guess < 0 || guess > 11) {
+        alert('Please enter a valid number between 0 and 11');
+        return;
+      }
+
+      attemptsLeft--;
+
+      if (guess === secretNumber) {
+        document.getElementById('result').textContent = 'Congratulations! You guessed the correct number!';
+        disableSubmitButton();
+      } else {
+        if (attemptsLeft === 0) {
+          document.getElementById('result').textContent = `Sorry, you're out of attempts. The correct number was ${secretNumber}.`;
+          disableSubmitButton();
+        } else {
+          const hint = guess < secretNumber ? 'greater' : 'smaller';
+          document.getElementById('result').textContent = `Wrong guess. The correct number is ${hint}. ${attemptsLeft} ${attemptsLeft === 1 ? 'attempt' : 'attempts'} left.`;
+        }
+      }
+    }
+
+    function replay() {
+      secretNumber = generateRandomNumber();
+      attemptsLeft = 4;
+      document.getElementById('result').textContent = '';
+      document.getElementById('guessInput').value = '';
+      enableSubmitButton();
+    }
+
+    function disableSubmitButton() {
+      document.getElementById('guessInput').disabled = true;
+      document.querySelectorAll('.btn:not(:last-child)').forEach(btn => {
+        btn.disabled = true;
+      });
+    }
+
+    function enableSubmitButton() {
+      document.getElementById('guessInput').disabled = false;
+      document.querySelectorAll('.btn:not(:last-child)').forEach(btn => {
+        btn.disabled = false;
+      });
+    }
+  </script>
+</body>
+
+</html>
