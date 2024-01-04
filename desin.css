@@ -1,0 +1,185 @@
+button {
+    background-color: #4CAF50; /* Green background color */
+    color: white; /* White text color */
+    padding: 10px 20px; /* Padding for better visual appearance */
+    border: none; /* Remove default button border */
+    border-radius: 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for background color and transform */
+  }
+  
+  button:hover {
+      background: linear-gradient(45deg, #FF8C00, #FFD700);
+      transform: rotate(10deg) scale(1.1);
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      color: #333;
+      border: 2px solid transparent;
+      opacity: 0.8; /* Set the desired opacity level */
+      transition: color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease, opacity 0.3s ease; /* Add opacity to the transition */
+  }
+  
+  .resized-image {
+    width: 47px; /* Set the desired width */
+    height: auto; /* Allow the height to adjust proportionally based on the width */
+  }
+  
+  
+  .image-container {
+    border-radius: 15px; /* Rounded corners */
+    overflow: hidden; /* Ensure the border doesn't overlap the rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Subtle box shadow */
+  }
+  
+  /* Optional: Adjust padding or margin for better spacing */
+  .image-container img {
+    width: 100%; /* Make the image fill the container */
+    height: auto; /* Maintain the image's aspect ratio */
+  }
+  
+  
+  .w3-card:hover {
+    transform: scale(1.1); /* Adjust the scale factor as needed */
+    transition: transform 0.3s ease; /* Add a smooth transition effect */
+  }
+  
+  body {
+      margin: 0;
+      overflow: auto;
+      background: linear-gradient(45deg, #ffb3b3, #ffd9b3, #ffffb3, #b3ffcc, #b3ffec, #b3f0ff, #b3d9ff, #b3b3ff, #d9b3ff, #ffb3f7, #ffb3d1, #ffcccb);
+      background-size: 1200% 1200%;
+      animation: rainbow 15s infinite;
+      font-family: 'Arial', sans-serif;
+  }
+  
+  
+  
+  
+  
+  
+  @keyframes rainbow {
+      0%, 100% {
+          background-position: 0 0;
+      }
+  
+      25% {
+          background-position: 100% 0;
+      }
+  
+      50% {
+          background-position: 100% 100%;
+      }
+  
+      75% {
+          background-position: 0 100%;
+      }
+  }
+  
+  header {
+      margin: 20px;
+      padding: 20px;
+      background-color: rgba(255, 255, 255, 0.8);
+      border-radius: 10px;
+      text-align: center;
+  }
+  
+  header h1 {
+      margin: 0;
+      color: #ff00ff;
+      font-size: 2em;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+  .cta-button-container {
+      text-align: center; 
+  }
+  
+  .cta-button {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      text-decoration: none;
+      background-color: #ff00ff;
+      color: #fff;
+  }
+  
+  main {
+      margin: 20px;
+      padding: 20px;
+      background-color: rgba(255, 255, 255, 0.8);
+      border-radius: 10px;
+  }
+  
+  section {
+      margin-bottom: 20px;
+  }
+  
+  footer {
+      margin: 20px;
+      padding: 20px;
+      background-color: rgba(255, 255, 255, 0.8);
+      border-radius: 10px;
+      text-align: center;
+      color: #800080; /* Purple text color */
+  }
+  
+  
+  
+  
+  nav {
+      background-color: #800080;
+      padding:0.88em;
+      text-align: center;
+  }
+  
+  nav a {
+      color: white;
+      text-decoration: none;
+      padding: 0.5em 1em;
+      margin: 0 0.5em;
+      border-radius: 4px;
+  }
+  
+  main {
+      padding: 1em;
+  }
+  
+  
+  #search-container {
+      text-align: right;
+      margin-top: 10px;
+  }
+  
+  #search-input {
+      padding: 3px;
+      font-size: 15px;
+  }
+  
+  #search-results {
+      list-style-type: none;
+      padding: 60;
+  }
+  
+  .result-item {
+      margin: 5px 0;
+  }
+  
+  
+  .cta-button {
+      font-size: 40px; /* Adjust the font size as needed */
+  }
+  
+  
+  .custom-text {
+      line-height: 2; /* Adjust the line spacing as needed (e.g., 1.5 for 1.5 times the font size) */
+      font-size: 20px; /* Set the font size as needed */
+      font-family: 'Arial', sans-serif; /* Change the font-family as needed */
+    }
+  
+  
+  
