@@ -1,270 +1,310 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Kiwi Project</title>
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-    <style>
-    body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
-    </style>
-  </head>
+  <link rel="stylesheet" href="desin.css">
+  <style>
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+      font-family: "Raleway", sans-serif
+    }
+  </style>
+</head>
 
+<body class="animation">
 
-  <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <div class="w3-top">
+    <div class="w3-bar w3-white w3-padding" style="letter-spacing:1px;">
+      <img src="kiwiprj.png" alt="Image" class="image-container">
+      <style>
+        .image-container {
+          position: relative;
+          width: 60px;
+          /* Set the width of your container */
+          height: 60px;
+          /* Set the height of your container */
+          border: 1px solid #ddd;
+          /* Optional border for visualization */
+        }
 
-  </head>
-  <body>
-
-    <div class="w3-top">
-      <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:1px;">
-        <img src="kiwiprj.png" alt="Image" class="image-container">
-          <style>
-              .image-container {
-                  position: relative;
-                  width: 60px; /* Set the width of your container */
-                  height: 60px; /* Set the height of your container */
-                  border: 1px solid #ddd; /* Optional border for visualization */
-              }
-
-              .centered-image {
-                  position: absolute;
-                  top: 50%;
-                  left: 50%;
-                  transform: translate(-50%, -50%);
-                  max-width: 100%;
-                  max-height: 100%;
-              }
-          </style>
-      <a href="https://sites.google.com/mc-knoller.edu.ph/socialmovement-ict/" class="w3-bar-item w3-button"><h4>The Kiwi Project</h4></a>
+        .centered-image {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          max-width: 100%;
+          max-height: 100%;
+        }
+      </style>
+      <a href="https://sites.google.com/mc-knoller.edu.ph/socialmovement-ict/" class="w3-bar-item w3-button">
+        <h4>The Kiwi Project</h4>
+      </a>
       <!-- Right-sided navbar links. Hide them on small screens -->
       <div class="w3-right w3-hide-small">
-              <div id="search-container">
-                  <input type="text" id="search-input" placeholder="Search...">
-              </div>
-
-              <ul id="search-results"></ul>
-
-              <script>
-                  document.getElementById('search-input').addEventListener('input', function() {
-                      var searchTerm = this.value.toLowerCase();
-                      var resultsContainer = document.getElementById('search-results');
-                      resultsContainer.innerHTML = '';
-
-                      // Iterate through all elements you want to search within
-                      var elementsToSearch = document.querySelectorAll('.searchable-element');
-                      elementsToSearch.forEach(function(element) {
-                          var elementText = element.textContent.toLowerCase();
-
-                          if (elementText.includes(searchTerm)) {
-                              var resultItem = document.createElement('li');
-                              resultItem.className = 'result-item';
-                              resultItem.textContent = elementText;
-                              resultsContainer.appendChild(resultItem);
-                          }
-                      });
-                  });
-              </script>
-            </div>
-          </div>
+        <div id="search-container">
+          <input type="text" id="search-input" placeholder="Search...">
         </div>
 
+        <ul id="search-results"></ul>
+
+        <script>
+          document.getElementById('search-input').addEventListener('input', function () {
+            var searchTerm = this.value.toLowerCase();
+            var resultsContainer = document.getElementById('search-results');
+            resultsContainer.innerHTML = '';
+
+            // Iterate through all elements you want to search within
+            var elementsToSearch = document.querySelectorAll('.searchable-element');
+            elementsToSearch.forEach(function (element) {
+              var elementText = element.textContent.toLowerCase();
+
+              if (elementText.includes(searchTerm)) {
+                var resultItem = document.createElement('li');
+                resultItem.className = 'result-item';
+                resultItem.textContent = elementText;
+                resultsContainer.appendChild(resultItem);
+              }
+            });
+          });
+        </script>
+      </div>
+    </div>
+  </div>
 
 
-<br/>
-<br/>
-<br/>
 
 
-  <header class="w3-container w3-center w3-padding-32"> 
+  <br></br>
+  <br></br>
+
+
+
+
+  <header class="w3-container w3-center w3-padding-32">
     <h1><b>THE KIWI PROJECT</b></h1>
+    <p></p>
+    <nav>
+      <button><strong><a href="https://sites.google.com/mc-knoller.edu.ph/socialmovement-ict/"
+            style="font-size: 20px;">Home</a></strong></button>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <button><strong><a href="https://padlet.com/rsalcedo0060/message-board-jwmzcacdc3jmtcd1"
+            style="font-size: 20px;">Padlet</a></strong></button>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <button><strong><a href="Articles.html" style="font-size: 20px;">Articles</a></strong></button>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <button><strong><a href="https://sites.google.com/mc-knoller.edu.ph/socialmovement-ict/mission-vision?authuser=0"
+            style="font-size: 20px;">About</a></strong></button>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <button><strong><a href="https://sites.google.com/mc-knoller.edu.ph/socialmovement-ict/people?authuser=0"
+            style="font-size: 20px;">Contact</a></strong></button>
+
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <button><strong><a href="game.html" style="font-size: 20px;">Game</a></strong></button>
+
+    </nav>
   </header>
 
 
 
-  <body>
-      <nav>
-        <button><strong><a href="https://sites.google.com/mc-knoller.edu.ph/socialmovement-ict/" style="font-size: 20px;">Home</a></strong></button>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <button><strong><a href="https://padlet.com/rsalcedo0060/message-board-jwmzcacdc3jmtcd1" style="font-size: 20px;">Padlet</a></strong></button>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <button><strong><a href="Articles.html" style="font-size: 20px;">Articles</a></strong></button>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <button><strong><a href="https://sites.google.com/mc-knoller.edu.ph/socialmovement-ict/mission-vision?authuser=0" style="font-size: 20px;">About</a></strong></button>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <button><strong><a href="https://sites.google.com/mc-knoller.edu.ph/socialmovement-ict/people?authuser=0" style="font-size: 20px;">Contact</a></strong></button>
 
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <button><strong><a href="game.html" style="font-size: 20px;">Game</a></strong></button>
-        
-      </nav>
-    <link rel="stylesheet" href="desin.css">
-  </body>
 
   <div class="w3-content" style="max-width:1100px">
 
-  <!-- About Section -->
-      <main>
-        <div class="w3-row w3-padding-64" id="about">
-          <div class="w3-col m6 w3-padding-large w3-hide-small">
-            <div class="w3-round w3-image w3-opacity-min">
-              <img src="kiwiprj.png" alt="Table Setting" width="500" height="500">
+    <!-- About Section -->
+    <main>
+      <div class="w3-row w3-padding-64" id="about">
+        <div class="w3-col m6 w3-padding-large w3-hide-small">
+          <div class="w3-round w3-image w3-opacity-min">
+            <img src="kiwiprj.png" alt="Table Setting" width="500" height="500">
+          </div>
+        </div>
+
+        <div class="w3-col m6 w3-padding-large">
+          <!-- Other content here -->
+
+          <h1 class="w3-center">The Kiwi Project</h1><br>
+          <h5 class="w3-center">A Student-led Initiative</h5>
+          <p class="custom-text">The Kiwi Projectsimply began as a school project founded in November 2023. The
+            organization decided to advocate safe spaces as a way to support students’ or individuals’ freedom of
+            expression and to educate acceptance of others despite differences in age, gender, color, and other factors.
+            Furthermore, they have chosen to highlight one of the several factors that threaten the confidentiality of
+            Safe Space, which is harassment based on gender.
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <!-- Grid -->
+    <div class="w3-row">
+
+      <!-- Blog entries -->
+      <div class="w3-col l8 s12">
+        <!-- Blog entry -->
+        <div class="w3-card w3-margin w3-white">
+          <br />
+          <img src="pppp.jpg" alt="Nature" width="700" height="300">
+          <div class="w3-container">
+            <h3><b>SAFE SPACES</b></h3>
+
+          </div>
+
+          <div class="w3-container">
+            <h4>
+              <p>Safe Spaces is a haven in which individuals of different genders, ages, races, socioeconomic classes,
+                and experiences are accepted, appreciated, treated equally with open minds, and may express themselves
+                freely without fear of prejudice or condemnation. It is based at Miriam College Community. It aims to
+                foster and educate the residents of the school regardless of age to create a safer environment wherein
+                everyone feels secure and valued. It helps numerous individuals freely express themselves and showcase
+                their true identity without the fear of being judged. With this, many can gain confidence and speak up
+                for themselves.</p>
+            </h4>
+            <div class="w3-row">
+              <div class="w3-col m8 s12">
+                <p><b><button><a href="https://sites.google.com/mc-knoller.edu.ph/socialmovement-ict/safe-spaces">READ
+                        MORE »<a /></button></b></p>
+              </div>
+              <div class="w3-col m4 w3-hide-small">
+              </div>
             </div>
           </div>
+        </div>
+        <hr>
 
-          <div class="w3-col m6 w3-padding-large">
-            <!-- Other content here -->
- 
-      <h1 class="w3-center">The Kiwi Project</h1><br>
-      <h5 class="w3-center">A Student-led Initiative</h5>
-      <p class="custom-text">The Kiwi Projectsimply began as a school project founded in November 2023. The organization decided to advocate safe spaces as a way to support students’ or individuals’ freedom of expression and to educate acceptance of others despite differences in age, gender, color, and other factors. Furthermore, they have chosen to highlight one of the several factors that threaten the confidentiality of Safe Space, which is harassment based on gender. 
-  </p>
-             </div>
+
+
+
+
+        <!-- Blog entry -->
+        <div class="w3-card w3-margin w3-white">
+          <br />
+          <img src="gbvv.jpg" alt="Nature" width="660" height="300" style="display: block; margin: auto;">
+          <div class="w3-container">
+            <h3><b>GENDER BASED VIOLENCE</b></h3>
+
+          </div>
+
+          <div class="w3-container">
+            <h4>
+              <p>Gender-based violence is violence committed against a person because of his or her sex or gender; this
+                involves the use of force, deceit, violence, cultural norms, or financial gain to compel someone else to
+                act against their will. It comes in different forms, it can be sexual, physical, verbal, psychological,
+                or socioeconomic.</p>
+            </h4>
+            <div class="w3-row">
+              <div class="w3-col m8 s12">
+                <p><button><a
+                      href="https://sites.google.com/mc-knoller.edu.ph/socialmovement-ict/gender-based-harrassment"><b>READ
+                        MORE »</b></a></button></p>
+              </div>
+              <div class="w3-col m4 w3-hide-small">
+              </div>
             </div>
-          </main>
-
-  <!-- Grid -->
-  <div class="w3-row">
-
-  <!-- Blog entries -->
-  <div class="w3-col l8 s12">
-    <!-- Blog entry -->
-    <div class="w3-card w3-margin w3-white">
-      <br/>
-      <img src="pppp.jpg" alt="Nature" width="700" height="300">
-      <div class="w3-container">
-        <h3><b>SAFE SPACES</b></h3>
-
-      </div>
-
-      <div class="w3-container">
-        <h4><p>Safe Spaces is a haven in which individuals of different genders, ages, races, socioeconomic classes, and experiences are accepted, appreciated, treated equally with open minds, and may express themselves freely without fear of prejudice or condemnation. It is based at Miriam College Community. It aims to foster and educate the residents of the school regardless of age to create a safer environment wherein everyone feels secure and valued. It helps numerous individuals freely express themselves and showcase their true identity without the fear of being judged. With this, many can gain confidence and speak up for themselves.</p></h4>
-        <div class="w3-row">
-          <div class="w3-col m8 s12">
-             <p><b><button><a href="https://sites.google.com/mc-knoller.edu.ph/socialmovement-ict/safe-spaces">READ MORE »<a/></button></b></p>
-          </div>
-          <div class="w3-col m4 w3-hide-small">
           </div>
         </div>
-      </div>
-    </div>
-    <hr>
-
-
-
-    
-
-    <!-- Blog entry -->
-    <div class="w3-card w3-margin w3-white">
-      <br/>
-      <img src="gbvv.jpg" alt="Nature" width="660" height="300" style="display: block; margin: auto;">
-      <div class="w3-container">
-        <h3><b>GENDER BASED VIOLENCE</b></h3>
-
+        <!-- END BLOG ENTRIES -->
       </div>
 
-      <div class="w3-container">
-        <h4><p>Gender-based violence is violence committed against a person because of his or her sex or gender; this involves the use of force, deceit, violence, cultural norms, or financial gain to compel someone else to act against their will. It comes in different forms, it can be sexual, physical, verbal, psychological, or socioeconomic.</p></h4>
-        <div class="w3-row">
-          <div class="w3-col m8 s12">
-            <p><button><a href="https://sites.google.com/mc-knoller.edu.ph/socialmovement-ict/gender-based-harrassment"><b>READ MORE »</b></a></button></p>
-          </div>
-          <div class="w3-col m4 w3-hide-small">
+      <!-- Introduction menu -->
+      <div class="w3-col l4">
+
+
+        <!-- About Card -->
+        <div class="w3-card w3-margin w3-margin-top">
+          <img src="vare.png" style="width:100%">
+          <div class="w3-container w3-white">
+            <h4><b>We Care!</b></h4>
+            <p>The Kiwi Project stands for safe spaces as a way to support students’ or individuals’ freedom of
+              expression and to educate acceptance of others despite differences in age, gender, color, and other
+              factors. </p>
           </div>
         </div>
-      </div>
-    </div>
-  <!-- END BLOG ENTRIES -->
-  </div>
+        <hr>
 
-    <!-- Introduction menu -->
-    <div class="w3-col l4">
 
-      
-      <!-- About Card -->
-      <div class="w3-card w3-margin w3-margin-top">
-      <img src="vare.png" style="width:100%">
-        <div class="w3-container w3-white">
-          <h4><b>We Care!</b></h4>
-          <p>The Kiwi Project stands for safe spaces as a way to support students’ or individuals’ freedom of expression and to educate acceptance of others despite differences in age, gender, color, and other factors. </p>
+        <!-- Posts -->
+        <div class="w3-card w3-margin">
+          <div class="w3-container w3-white">
+            <h4>See also</h4>
+          </div>
+          <ul class="w3-ul w3-hoverable w3-white">
+            <li class="w3-padding-16">
+              <img src="mcs.png" alt="Image" class="resized-image">
+              <span class="w3-large">Miriam College</span><br>
+              <span><a href="https://sites.google.com/mc-knoller.edu.ph/socialmovement-ict/people?authuser=0">Safe
+                  Spaces Primer</a></span>
+            </li>
+            <li class="w3-padding-16">
+              <img src="bbl.jpg" alt="Image" class="resized-image">
+              <span class="w3-large">Safe Spaces Act</span><br>
+              <span><a href="https://www.mc.edu.ph/safe-spaces">R.A. 11313</a></span>
+            </li>
+            <li class="w3-padding-16">
+              <img src="PPNP.png" alt="Image" class="resized-image">
+              <span class="w3-large">Philippine National Police</span><br>
+              <span><a href="https://acg.pnp.gov.ph/eComplaint/open.php">Complaint Desk</a></span>
+            </li>
+            <li class="w3-padding-16">
+              <img src="wagiiiii.png" alt="Image" class="resized-image">
+              <span class="w3-large">WAGI</span><br>
+              <span><a href="https://www.mc.edu.ph/wagi">MC Women and Gender Institute</a></span>
+            </li>
+          </ul>
         </div>
-      </div><hr>
-
-
-    <!-- Posts -->
-    <div class="w3-card w3-margin">
-      <div class="w3-container w3-white">
-        <h4>See also</h4>
-      </div>
-      <ul class="w3-ul w3-hoverable w3-white">
-        <li class="w3-padding-16">
-          <img src="mcs.png" alt="Image" class="resized-image">
-          <span class="w3-large">Miriam College</span><br>
-          <span><a href="https://sites.google.com/mc-knoller.edu.ph/socialmovement-ict/people?authuser=0">Safe Spaces Primer</a></span>
-        </li>
-        <li class="w3-padding-16">
-          <img src="bbl.jpg" alt="Image" class="resized-image">
-          <span class="w3-large">Safe Spaces Act</span><br>
-          <span><a href="https://www.mc.edu.ph/safe-spaces">R.A. 11313</a></span>
-        </li> 
-        <li class="w3-padding-16">
-          <img src="PPNP.png" alt="Image" class="resized-image">
-          <span class="w3-large">Philippine National Police</span><br>
-          <span><a href="https://acg.pnp.gov.ph/eComplaint/open.php">Complaint Desk</a></span>
-        </li>   
-        <li class="w3-padding-16">
-          <img src="wagiiiii.png" alt="Image" class="resized-image">
-          <span class="w3-large">WAGI</span><br>
-          <span><a href="https://www.mc.edu.ph/wagi">MC Women and Gender Institute</a></span>
-        </li>   
-      </ul>
-    </div>
-    <hr> 
+        <hr>
 
 
 
-</head>
+        </head>
 
 
 
-      <body>
 
-      <section class="cta-button-container">
+
+        <section class="cta-button-container">
           <a class="cta-button" href="https://forms.gle/UJYedjkLPYmyGMsYA">Donate Now</a>
-      </section>
+        </section>
 
-      <script>
+        <script>
           // JavaScript for changing button color every second
-          setInterval(function() {
-              const button = document.querySelector('.cta-button');
-              const randomColor = getRandomColor();
-              button.style.backgroundColor = randomColor;
+          setInterval(function () {
+            const button = document.querySelector('.cta-button');
+            const randomColor = getRandomColor();
+            button.style.backgroundColor = randomColor;
           }, 1000);
 
           function getRandomColor() {
-              const letters = '0123456789ABCDEF';
-              let color = '#';
-              for (let i = 0; i < 6; i++) {
-                  color += letters[Math.floor(Math.random() * 16)];
-              }
-              return color;
+            const letters = '0123456789ABCDEF';
+            let color = '#';
+            for (let i = 0; i < 6; i++) {
+              color += letters[Math.floor(Math.random() * 16)];
+            }
+            return color;
           }
-      </script>
+        </script>
 
-      <!-- Your content with searchable elements -->
-      <div class="searchable-element">
+        <!-- Your content with searchable elements -->
+        <div class="searchable-element">
           <!-- Your website content goes here -->
           <!-- Make sure to add class="searchable-element" to elements you want to include in the search -->
-      </div>
-
-      </body>
+        </div>
 
 
-      <div class="w3-card w3-margin">
-        <div class="w3-container w3-white">
-<hr>
-         <div id="disqus_thread"></div>
-          <script>
+
+
+        <div class="w3-card w3-margin">
+          <div class="w3-container w3-white">
+            <hr>
+            <div id="disqus_thread"></div>
+            <script>
               /**
               *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
               *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
@@ -274,18 +314,22 @@
               this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
               };
               */
-              (function() { // DON'T EDIT BELOW THIS LINE
-              var d = document, s = d.createElement('script');
-              s.src = 'https://the-kiwi-project.disqus.com/embed.js';
-              s.setAttribute('data-timestamp', +new Date());
-              (d.head || d.body).appendChild(s);
+              (function () { // DON'T EDIT BELOW THIS LINE
+                var d = document, s = d.createElement('script');
+                s.src = 'https://the-kiwi-project.disqus.com/embed.js';
+                s.setAttribute('data-timestamp', +new Date());
+                (d.head || d.body).appendChild(s);
               })();
-          </script>
-          <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+            </script>
+            <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered
+                by Disqus.</a></noscript>
 
 
-        
-      </div>
-        
-        <script id="dsq-count-scr" src="//the-kiwi-project.disqus.com/count.js" async></script>
+
+          </div>
+
+          <script id="dsq-count-scr" src="//the-kiwi-project.disqus.com/count.js" async></script>
+
+</body>
+
 </html>
